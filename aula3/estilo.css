@@ -1,0 +1,57 @@
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    background-color: rgb(19, 40, 231);
+    align-items: center;
+    border-style: inset
+}
+body {
+    background-color: rgba(226, 200, 226, 0.815);
+    background-image: url("https://egestorab.saude.gov.br/resource/img/fundo_login.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: Arial;
+}
+div {
+    border-style: dashed;
+    margin-bottom: 16px;
+    padding: 20px;
+    text-align: left;
+}
+
+#div_pessoal {
+    background-color: lightblue;
+}
+
+#div_prof {
+    background-color: lightcoral;
+}
+#div_act {
+    background-color: lightgreen;
+}
+
+.input_bg {
+    background-color: khaki;
+}
+
+label {
+    font-weight: bold;
+}
+
+.sent_btn {
+    color: white;
+    border-style: inset;
+    background-color: green;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.reset_btn {
+    color: white;
+    border-style: inset;
+    background-color: red;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}

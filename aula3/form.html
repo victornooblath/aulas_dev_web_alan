@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+		<link rel="stylesheet" href="estilo.css" />
+		<style>
+			/* h1 {
+				color: rgb(255, 255, 255);
+				font-size: 32px;
+				background-color: rgb(19, 40, 231);
+				align-items: center;
+				border-style: inset
+			}
+			body {
+				background-color: rgba(226, 200, 226, 0.815);
+				background-image: url("https://egestorab.saude.gov.br/resource/img/fundo_login.png");
+				background-repeat: no-repeat; 
+				background-size: cover;
+			}*/
+		</style>
+</head>
+<body>
+	<form action="backend.php" method="post">
+			<h1>Formulário de cadastro</h1>
+			<div id="div_pessoal">
+					<p>Dados pessoais</p>
+					<label>Nome: </label>
+					<input type="text" name="nome" class="input_bg" /><br><br>
+					<label>E-mail: </label>
+					<input type="email" name="email" class="input_bg" /><br><br>
+					<label>Cidade: </label>
+					<input type="text" name="cidade" class="input_bg" /><br><br>
+					<label>Estado: </label>
+					<select name="estado" class="input_bg">
+							<option value=""></option>
+							<option value="PA">PA</option>
+							<option value="AM">AM</option>
+					</select>
+			</div> <!-- Fim dados pessoais -->
+
+			<div id="div_prof">
+					<p>Dados profissionais</p>
+					<label>Cargo pretendido:</label><br/>   
+					<input type="radio" value="1">Analista de sistemas
+					<input type="radio" value="2">Analista de banco de dados
+					<input type="radio" value="3">Analista de suporte
+					<br/><br/>
+					<label>Tecnologias de interesse:</label><br/> 
+					<input type="checkbox" value="1">Java
+					<input type="checkbox" value="2">HTML, CSS
+					<input type="checkbox" value="3">Javascript
+					<input type="checkbox" value="4">SQL
+					<br/><br/>
+					<label>Mini currículo:</label><br/>
+					<textarea name="curriculo" class="input_bg" rows="6" cols="50"></textarea>
+			</div> <!-- Fim dados profissionais -->
+
+			<div style="text-align: center;" id="div_act">
+					<input type="submit" class="sent_btn" value="Enviar" />
+					<input type="reset" class="reset_btn" value="Limpar" />
+			</div> <!-- Fim Ações -->
+	</form>
+</body>
+</html>
